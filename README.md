@@ -45,35 +45,35 @@ See [this link](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/Tasks/i
 ## Remarks on tested Linux distros
 
 
-### Clear Linux 33930
+### Clear Linux
 https://clearlinux.org/
 
 - Not in the list of "Linux Distributions that Support Custom Image Import".
 - Lowest boot time in the test.
 - A distro by Intel so it's highly tuned for Intel platforms but works well with AMD, too. AMD even recommends using Clear Linux for performance testing its CPUs.
 
-### Fedora CoreOS 32.20201018.3.0
+### Fedora CoreOS
 https://getfedora.org/en/coreos
 
 - Not in the list of "Linux Distributions that Support Custom Image Import".
 
-### Flatcar Linux 2605.7.0
+### Flatcar Linux
 https://www.flatcar-linux.org/
 
 - In the list of "Linux Distributions that Support Custom Image Import".
 
-### RancherOS 1.5.6
+### RancherOS
 https://rancher.com/docs/os/v1.x/en/
 
 - Not in the list of "Linux Distributions that Support Custom Image Import".
 
-### Ubuntu 20.04 Minimal
+### Ubuntu Minimal
 https://wiki.ubuntu.com/Minimal
 
 - The only official OCI platform image in the test list.
 - Boot time can be lowered to `8.257s` by disabling Oracle Cloud Agent and `cloud-init`.
 
-### Ubuntu Core 18
+### Ubuntu Core
 https://ubuntu.com/core
 
 - In the list of "Linux Distributions that Support Custom Image Import".
