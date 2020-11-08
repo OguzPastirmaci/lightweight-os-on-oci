@@ -9,7 +9,6 @@ All tests were run on `VM.Standard.E3.Flex.4` shape in US West (Phoenix) region.
 | Clear Linux    | 33930           | 19.03.8        | 3.083s                                           |
 | Fedora CoreOS  | 32.20201018.3.0 | 19.03.11       | 7.844s                                           |
 | Flatcar Linux  | 2605.7.0        | 19.03.12       | 8.174s                                           |
-| RancherOS      | 1.5.6           | 19.03.11       |                                                  |
 | Ubuntu Minimal | 20.04           | 19.03.13       | 11.344s                                          |
 | Ubuntu Core    | 18              | 19.03.11       |                                                  |
 
@@ -61,11 +60,6 @@ https://getfedora.org/en/coreos
 https://www.flatcar-linux.org/
 
 - In the list of "Linux Distributions that Support Custom Image Import".
-
-### RancherOS
-https://rancher.com/docs/os/v1.x/en/
-
-- Not in the list of "Linux Distributions that Support Custom Image Import".
 
 ### Ubuntu Minimal
 https://wiki.ubuntu.com/Minimal
