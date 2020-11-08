@@ -42,38 +42,38 @@ See [this link](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/Tasks/i
 
 6 - Repeat steps 4 & 5 three times and get the average of `systemd-analyze` results.
 
+## Remarks on tested Linux distros
 
 
-
-## Clear Linux 33930 with Docker 19.03.8
+### Clear Linux 33930
 https://clearlinux.org/
 
 - Not in the list of "Linux Distributions that Support Custom Image Import".
 - Lowest boot time in the test.
 - A distro by Intel so it's highly tuned for Intel platforms but works well with AMD, too. AMD even recommends using Clear Linux for performance testing its CPUs.
 
-## Fedora CoreOS 32.20201018.3.0 with Docker 19.03.11
+### Fedora CoreOS 32.20201018.3.0
 https://getfedora.org/en/coreos
 
 - Not in the list of "Linux Distributions that Support Custom Image Import".
 
-## Flatcar Linux 2605.7.0 with Docker 19.03.12
+### Flatcar Linux 2605.7.0
 https://www.flatcar-linux.org/
 
 - In the list of "Linux Distributions that Support Custom Image Import".
 
-## RancherOS 1.5.6 with Docker 19.03.11
+### RancherOS 1.5.6
 https://rancher.com/docs/os/v1.x/en/
 
 - Not in the list of "Linux Distributions that Support Custom Image Import".
 
-## Ubuntu 20.04 Minimal with Docker 19.03.13
+### Ubuntu 20.04 Minimal
 https://wiki.ubuntu.com/Minimal
 
 - The only official OCI platform image in the test list.
 - Boot time can be lowered to `8.257s` by disabling Oracle Cloud Agent and `cloud-init`.
 
-## Ubuntu Core 18 with Docker 19.03.11
+### Ubuntu Core 18
 https://ubuntu.com/core
 
 - In the list of "Linux Distributions that Support Custom Image Import".
