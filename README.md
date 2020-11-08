@@ -40,7 +40,7 @@ See [this link](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/Tasks/i
 
 5 - Start the VM and run `systemd-analyze` to check how long booting took.
 
-6 - Repeat steps 5 & 6 three times and get the average of `systemd-analyze` results.
+6 - Repeat steps 4 & 5 three times and get the average of `systemd-analyze` results.
 
 
 
