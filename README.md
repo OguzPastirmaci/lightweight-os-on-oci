@@ -1,6 +1,17 @@
-# Testing lightweight OS for running containers on OCI
+# Testing boot times of lightweight Linux distributions for running containers on OCI
 
+
+## Test results
 All tests were run on VM.Standard.E3.Flex.4 shape in US West (Phoenix) region. Grub timeout was set to 0 where applicable.
+
+| OS                   | Out of the box boot time with Docker   installed |
+|----------------------|--------------------------------------------------|
+| Clear Linux 33930    | 3.083s                                           |
+| Fedora CoreOS 32     | 7.844s                                           |
+| Flatcar Linux 2605   | 8.174s                                           |
+| RancherOS 1.5.6      |                                                  |
+| Ubuntu 20.04 Minimal | 11.344s                                          |
+| Ubuntu Core 18       |                                                  |
 
 #### Test steps
 
@@ -27,3 +38,16 @@ See [this link](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/Tasks/i
 - Lowest boot time in the test.
 - A distro by Intel so it's highly tuned for Intel platforms but works well with AMD, too. AMD even recommends using Clear Linux for performance testing its CPUs.
 - Not in the list of "Linux Distributions that Support Custom Image Import".
+
+
+## Fedora CoreOS 32.20201018.3.0 with Docker 19.03.11
+
+## Flatcar Linux 2605.7.0 with Docker 19.03.12
+
+## RancherOS 1.5.6 with Docker 19.03.11
+
+## Ubuntu 20.04 Minimal with Docker 19.03.13
+
+## Ubuntu Core 18 with Docker 19.03.11
+
+
