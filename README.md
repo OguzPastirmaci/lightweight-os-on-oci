@@ -4,14 +4,14 @@
 ## Test results
 All tests were run on VM.Standard.E3.Flex.4 shape in US West (Phoenix) region. Grub timeout was set to 0 where applicable.
 
-| OS                   | Out of the box boot time with Docker   installed |
-|----------------------|--------------------------------------------------|
-| Clear Linux 33930    | 3.083s                                           |
-| Fedora CoreOS 32     | 7.844s                                           |
-| Flatcar Linux 2605   | 8.174s                                           |
-| RancherOS 1.5.6      |                                                  |
-| Ubuntu 20.04 Minimal | 11.344s                                          |
-| Ubuntu Core 18       |                                                  |
+| OS             | Version         | Out of the box boot time with Docker installed |
+|----------------|-----------------|--------------------------------------------------|
+| Clear Linux    | 33930           | 3.083s                                           |
+| Fedora CoreOS  | 32.20201018.3.0 | 7.844s                                           |
+| Flatcar Linux  | 2605.7.0        | 8.174s                                           | 
+| RancherOS      | 1.5.6           |                                                  |
+| Ubuntu Minimal | 20.04           | 11.344s                                          |
+| Ubuntu Core    | 18              |                                                  |
 
 #### Test steps
 
