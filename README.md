@@ -47,6 +47,8 @@ See [this link](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/Tasks/i
 ### Clear Linux
 https://clearlinux.org/
 
+Clear Linux OS is an open source, rolling release Linux distribution optimized for performance and security, from the Cloud to the Edge, designed for customization, and manageability.
+
 - Not in the list of "Linux Distributions that Support Custom Image Import".
 - Lowest boot time in the test.
 - A distro by Intel so it's highly tuned for Intel platforms but works well with AMD, too. AMD even recommends using Clear Linux for performance testing its CPUs.
@@ -54,20 +56,29 @@ https://clearlinux.org/
 ### Fedora CoreOS
 https://getfedora.org/en/coreos
 
+Fedora CoreOS is an automatically-updating, minimal operating system for running containerized workloads securely and at scale.
+
 - Not in the list of "Linux Distributions that Support Custom Image Import".
 
 ### Flatcar Linux
 https://www.flatcar-linux.org/
 
+Flatcar Container Linux is an immutable Linux distribution for containers.
+
 - In the list of "Linux Distributions that Support Custom Image Import".
+- A fork of the CoreOS Container Linux and maintained by [Kinvolk](https://kinvolk.io/).
 
 ### Ubuntu Minimal
 https://wiki.ubuntu.com/Minimal
+
+Minimal Ubuntu is a set of Ubuntu images designed for automated deployment at scale and made available across a range of cloud substrates.
 
 - The only official OCI platform image in the test list.
 - Boot time can be lowered to `8.257s` by disabling Oracle Cloud Agent and `cloud-init`.
 
 ### Ubuntu Core
 https://ubuntu.com/core
+
+Ubuntu Core is a tiny, transactional version of Ubuntu for IoT devices and large container deployments.
 
 - In the list of "Linux Distributions that Support Custom Image Import".
