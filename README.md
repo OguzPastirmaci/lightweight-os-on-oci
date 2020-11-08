@@ -2,7 +2,7 @@
 
 
 ## Test results
-All tests were run on VM.Standard.E3.Flex.4 shape in US West (Phoenix) region. Grub timeout was set to 0 where applicable.
+All tests were run on `VM.Standard.E3.Flex.4` shape in US West (Phoenix) region. Grub timeout was set to 0 where applicable.
 
 | OS             | Version         | Out of the box boot time with Docker installed |
 |----------------|-----------------|--------------------------------------------------|
@@ -15,7 +15,7 @@ All tests were run on VM.Standard.E3.Flex.4 shape in US West (Phoenix) region. G
 
 ## Test summary
 
-- Ubuntu Minimal 20.04 is the only official OCI platform image within the list of Linux distros in this list.
+- Ubuntu Minimal 20.04 is the only official OCI platform image within the list of Linux distros in the test.
 - Ubuntu Minimal 20.04's average boot time is `9.598s` when [Oracle Cloud Agent](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/Tasks/enablingmonitoring.htm) service is disabled. The boot time becomes `8.257s` when both Oracle Cloud Agent and `cloud-init` services are disabled.
 
 - Flatcar Linux is [in the list](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/Tasks/importingcustomimagelinux.htm#ossupport) of Linux Distributions that Support Custom Image Import on OCI.
@@ -23,7 +23,12 @@ All tests were run on VM.Standard.E3.Flex.4 shape in US West (Phoenix) region. G
 - Clear Linux has the lowest boot time.
 
 
-#### Test steps
+## What does supported/not supported mean?
+OCI has a list of Linux distributions that support bringing your own image. If the Linux distribution is not in the list, it does not mean that it wouldn't work on OCI. It means that if you have any issues running it, Oracle will provide "commercially reasonable support limited to getting an instance launched and accessible via SSH."
+
+See [this link](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/Tasks/importingcustomimagelinux.htm#Importing_Custom_Linux_Images) for more information.
+
+## Test steps
 
 1 - Create the VM.
 
@@ -38,10 +43,7 @@ All tests were run on VM.Standard.E3.Flex.4 shape in US West (Phoenix) region. G
 6 - Repeat steps 5 & 6 three times and get the average of `systemd-analyze` results.
 
 
-## What does supported/not supported mean?
-OCI has a list of Linux distributions that support bringing your own image. If the Linux distribution is not in the list, it does not mean that it wouldn't work on OCI. It means that if you have any issues running it, Oracle will provide "commercially reasonable support limited to getting an instance launched and accessible via SSH."
 
-See [this link](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/Tasks/importingcustomimagelinux.htm#Importing_Custom_Linux_Images) for more information.
 
 ## Clear Linux 33930 with Docker 19.03.8
 https://clearlinux.org/
