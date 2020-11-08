@@ -19,7 +19,7 @@ All tests were run on `VM.Standard.E3.Flex.4` shape in US West (Phoenix) region.
 
 - Flatcar Linux is [in the list](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/Tasks/importingcustomimagelinux.htm#ossupport) of Linux Distributions that Support Custom Image Import on OCI.
 
-- Clear Linux has the lowest boot time.
+- Clear Linux has the best boot time.
 
 
 ## What does supported/not supported mean?
