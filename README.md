@@ -13,6 +13,12 @@ All tests were run on VM.Standard.E3.Flex.4 shape in US West (Phoenix) region. G
 | Ubuntu Minimal | 20.04           | 11.344s                                          |
 | Ubuntu Core    | 18              |                                                  |
 
+Summary
+
+- Ubuntu Minimal 20.04 is the only official OCI platform image within the list of Linux distros in this list.
+- Ubuntu Minimal 20.04's average boot time is `9.598s` when [Oracle Cloud Agent](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/Tasks/enablingmonitoring.htm) service is disabled. The boot time becomes `8.257s` when both Oracle Cloud Agent and `cloud-init` services are disabled. 
+
+
 #### Test steps
 
 1 - Create the VM.
@@ -34,20 +40,34 @@ OCI has a list of Linux distributions that support bringing your own image. If t
 See [this link](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/Tasks/importingcustomimagelinux.htm#Importing_Custom_Linux_Images) for more information.
 
 ## Clear Linux 33930 with Docker 19.03.8
+https://clearlinux.org/
 
+- Not in the list of "Linux Distributions that Support Custom Image Import".
 - Lowest boot time in the test.
 - A distro by Intel so it's highly tuned for Intel platforms but works well with AMD, too. AMD even recommends using Clear Linux for performance testing its CPUs.
-- Not in the list of "Linux Distributions that Support Custom Image Import".
-
 
 ## Fedora CoreOS 32.20201018.3.0 with Docker 19.03.11
+https://getfedora.org/en/coreos
+
+- Not in the list of "Linux Distributions that Support Custom Image Import".
 
 ## Flatcar Linux 2605.7.0 with Docker 19.03.12
+https://www.flatcar-linux.org/
+
+- In the list of "Linux Distributions that Support Custom Image Import".
 
 ## RancherOS 1.5.6 with Docker 19.03.11
+https://rancher.com/docs/os/v1.x/en/
+
+- Not in the list of "Linux Distributions that Support Custom Image Import".
 
 ## Ubuntu 20.04 Minimal with Docker 19.03.13
+https://wiki.ubuntu.com/Minimal
+
+- The only official OCI platform image in the test list.
+- Boot time can be lowered to `8.257s` by disabling Oracle Cloud Agent and `cloud-init`.
 
 ## Ubuntu Core 18 with Docker 19.03.11
+https://ubuntu.com/core
 
-
+- In the list of "Linux Distributions that Support Custom Image Import".
