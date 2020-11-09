@@ -14,16 +14,6 @@ All tests were run on `VM.Standard.E3.Flex.4` shape in US West (Phoenix) region.
 | Ubuntu Minimal | 20.04           | 19.03.13       | 11.344s                                          |
 | Ubuntu Core    | 18              | 19.03.11       | 14.823s                                                 |
 
-## Test summary
-
-- Ubuntu Minimal 20.04 is the only official OCI platform image in the test.
-- Ubuntu Minimal 20.04's average boot time becomes `9.598s` when [Oracle Cloud Agent](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/Tasks/enablingmonitoring.htm) service is disabled.
-
-- Flatcar Linux is [in the list](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/Tasks/importingcustomimagelinux.htm#ossupport) of Linux Distributions that Support Custom Image Import on OCI.
-
-- Clear Linux has the best boot time.
-
-
 ## What does supported/not supported mean?
 OCI has a list of Linux distributions that support bringing your own image. If the Linux distribution is not in the list, it does not mean that it wouldn't work on OCI. It means that if you have any issues running it, Oracle will provide "commercially reasonable support limited to getting an instance launched and accessible via SSH."
 
