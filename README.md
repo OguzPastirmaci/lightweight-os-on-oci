@@ -10,7 +10,7 @@ All tests were run on `VM.Standard.E3.Flex.4` shape in US West (Phoenix) region.
 | Fedora CoreOS  | 32.20201018.3.0 | 19.03.11       | 7.844s                                           |
 | Flatcar Linux  | 2605.7.0        | 19.03.12       | 8.174s                                           |
 | Oracle Linux Slim  | 7.9        | 19.03.13       |                                            |
-| Oracle Linux Slim  | 8.2        | 19.03.13       |                                            |
+| Oracle Linux Slim  | 8.2        | 19.03.13       |  8.521s                                      |
 | Ubuntu Minimal | 20.04           | 19.03.13       | 11.344s                                          |
 | Ubuntu Core    | 18              | 19.03.11       | 14.823s                                                 |
 
