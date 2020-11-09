@@ -2,7 +2,7 @@
 
 
 ## Test results
-All tests were run on `VM.Standard.E3.Flex.4` shape in US West (Phoenix) region. Grub timeout was set to 0 where applicable.
+All tests were run on `VM.Standard.E3.Flex.4` shape in US West (Phoenix) region.
 
 | OS             | OS version      | Docker version | Out of the box boot time with Docker   installed |
 |----------------|-----------------|----------------|--------------------------------------------------|
@@ -15,7 +15,7 @@ All tests were run on `VM.Standard.E3.Flex.4` shape in US West (Phoenix) region.
 ## Test summary
 
 - Ubuntu Minimal 20.04 is the only official OCI platform image in the test.
-- Ubuntu Minimal 20.04's average boot time becomes `9.598s` when [Oracle Cloud Agent](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/Tasks/enablingmonitoring.htm) service is disabled. The boot time becomes `8.257s` when both Oracle Cloud Agent and `cloud-init` services are disabled.
+- Ubuntu Minimal 20.04's average boot time becomes `9.598s` when [Oracle Cloud Agent](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/Tasks/enablingmonitoring.htm) service is disabled. The boot time becomes `9.598s` when Oracle Cloud Agent is removed.
 
 - Flatcar Linux is [in the list](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/Tasks/importingcustomimagelinux.htm#ossupport) of Linux Distributions that Support Custom Image Import on OCI.
 
@@ -74,7 +74,7 @@ https://wiki.ubuntu.com/Minimal
 Minimal Ubuntu is a set of Ubuntu images designed for automated deployment at scale and made available across a range of cloud substrates.
 
 - The only official OCI platform image in the test list.
-- Boot time can be lowered to `8.257s` by disabling Oracle Cloud Agent and `cloud-init`.
+- Boot time can be lowered to `9.598s` by disabling Oracle Cloud Agent.
 
 ### Ubuntu Core
 https://ubuntu.com/core
