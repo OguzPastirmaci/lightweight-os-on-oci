@@ -15,7 +15,7 @@ All tests were run on `VM.Standard.E3.Flex.4` shape in US West (Phoenix) region.
 ## Test summary
 
 - Ubuntu Minimal 20.04 is the only official OCI platform image in the test.
-- Ubuntu Minimal 20.04's average boot time becomes `9.598s` when [Oracle Cloud Agent](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/Tasks/enablingmonitoring.htm) service is disabled. The boot time becomes `9.598s` when Oracle Cloud Agent is removed.
+- Ubuntu Minimal 20.04's average boot time becomes `9.598s` when [Oracle Cloud Agent](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/Tasks/enablingmonitoring.htm) service is disabled.
 
 - Flatcar Linux is [in the list](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/Tasks/importingcustomimagelinux.htm#ossupport) of Linux Distributions that Support Custom Image Import on OCI.
 
