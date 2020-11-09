@@ -70,6 +70,10 @@ Flatcar Container Linux is an immutable Linux distribution for containers.
 - In the list of "Linux Distributions that Support Custom Image Import".
 - A fork of the CoreOS Container Linux and maintained by [Kinvolk](https://kinvolk.io/).
 
+### Oracle Linux Slim
+
+- Slim images are created with [Oracle Linux image tools.](https://github.com/oracle/ol-sample-scripts/tree/master/oracle-linux-image-tools)
+
 ### Ubuntu Minimal
 https://wiki.ubuntu.com/Minimal
 
